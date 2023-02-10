@@ -107,7 +107,7 @@ def leer_archivo(ruta)->None:
                 if ((letra == "[") and((lastword == "PROCEDIMIENTOS") or (lastword == "SQPARENTESISCERRADO"))) or (palabracreada in diccionariofunciones):
                         
                     if palabracreada != "":
-                        lexer = lexer + " " + "FUNCTION"
+                        lexer = lexer + " " + palabracreada
                         diccionario[palabracreada] = palabracreada
                         palabracreada = ""
                     if letra == "[":
