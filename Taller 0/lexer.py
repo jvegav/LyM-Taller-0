@@ -120,7 +120,7 @@ def leer_archivo(ruta)->None:
                     
                     if(palabracreada in diccionario):   
                         if (palabracreada == "vars") :
-                            temporal = "xd"
+                            temporal = "variable"
 
 
                         
@@ -133,7 +133,7 @@ def leer_archivo(ruta)->None:
                                 lexer = lexer + " " + "INT"
                                 lastword = "INT"
                             else:   
-                                if(temporal == "xd"):
+                                if(temporal == "variable"):
                                     diccionario["var-" + palabracreada] = "var-" + palabracreada
                                     lexer = lexer + " " + "var"
                                     lastword = "var"
@@ -155,7 +155,7 @@ def leer_archivo(ruta)->None:
                         if(letra == "|"):
                             contador_or +=1
                             if(contador_or != 2):
-                                temporal = "xd"
+                                temporal = "variable"
                             elif(contador_or == 2):
                                 temporal =""
                                 contador_or = 0
